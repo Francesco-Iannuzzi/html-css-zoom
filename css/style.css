@@ -1,6 +1,88 @@
+/* #region common */
+
 *
 {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+/* #endregione common */
+
+/* #region utilities */
+
+.container
+{
+    max-width: 1992px;
+    width: 90%;
+    margin: auto;
+}
+
+.flex
+{
+    display: flex;
+}
+
+/* #endregion utilities */
+
+#app_main
+{
+    background-color: #000000;
+    position: relative;
+    height: 90vh;
+    width: 100vw;
+}
+
+.main_button
+{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+
+button
+{
+    background-color: #4a4a4a;
+    border: none;
+    border-radius: 0.5rem;
+    color: white;
+    padding: 0.25rem 0.5rem;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    line-height: 1.5rem;
+    margin-left: 0.5rem;
+}
+
+.row
+{
+    padding-top: 6rem;
+}
+
+.col
+{
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.screen
+{
+    position: relative;
+    width: 14%;
+}
+
+.screen img
+{
+    max-width: 100%;
+    margin-top: 2rem;
+}
+
+.screen > .users
+{
+    background-color: #4a4a4a7d;
+    color: white;
+    position: absolute;
+    bottom: 4px;
+    left: 0;
+    line-height: 2rem;
 }
