@@ -112,6 +112,11 @@ button
     align-items: center;
 }
 
+.green > i
+{
+    color: green;
+}
+
 .close
 {
     background-color: #4a4a4a;
@@ -130,7 +135,7 @@ button
 
 .button_footer > i
 {
-    font-size: 1rem;
+    font-size: 1.5rem;
 }
 
 .button_footer > .text_footer
