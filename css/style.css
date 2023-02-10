@@ -11,14 +11,6 @@
 
 /* #region utilities */
 
-.container
-{
-    max-width: 1992px;
-    width: 90%;
-    height: 100%;
-    margin: auto;
-}
-
 .flex
 {
     display: flex;
@@ -32,16 +24,7 @@
 {
     height: 80px;
     background-color: #000000;
-}
-
-/* #endregion header */
-
-/* #region main */
-#app_main
-{
-    background-color: #000000;
     position: relative;
-    height: calc(100vh - 160px);
 }
 
 .main_button
@@ -67,30 +50,37 @@
     cursor: pointer;
 }
 
-.col
+/* #endregion header */
+
+/* #region main */
+#app_main
 {
-    flex-wrap: wrap;
-    justify-content: space-between;
+    background-color: #000000;
+    height: calc(100vh - 160px);
+    overflow-y: auto;
 }
 
 .screen
 {
-    position: relative;
-    width: 14%;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 0 2rem;
 }
 
-.screen img
+.user
 {
-    max-width: 100%;
-    margin-top: 1.5rem;
-}
+    height: 150px;
+    width: 300px;
+    margin-bottom: 1rem;
+    position: relative;
+} 
 
-.screen > .users
+.name
 {
     background-color: #4a4a4a7d;
     color: white;
     position: absolute;
-    bottom: 4px;
+    bottom: 0;
     left: 0;
     line-height: 2rem;
     padding-right: 0.5rem;
